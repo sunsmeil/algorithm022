@@ -45,3 +45,26 @@ var minPathSum = function(grid) {
     }
     return grid[grid.length-1][grid[0].length-1]
 };
+
+/**
+ * 120. 三角形最小路径和
+ * https://leetcode-cn.com/problems/triangle/
+ * @param {number[][]} triangle
+ * @return {number}
+ */
+var minimumTotal = function(triangle) {
+    // 从底向上
+    // dp方程
+    // f(i,j) = min(f(i+1,j),f(i+1,j+1)) + f(i,j)
+
+    if(triangle.length === 1) {
+        return triangle[0][0]
+    }
+
+    for(let i = triangle.length - 2; i >= 0; i --) {
+        for(let j = 0; j < triangle[i].length; j ++) {
+            triangle[i][j] = Math.min(triangle[i+1][j], triangle[i+1][j+1]) + triangle[i][j]
+        }
+    }
+    return triangle[0][0]
+};
