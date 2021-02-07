@@ -22,3 +22,9 @@
 ## 注意事项
 
  如果对 Git 和 GitHub 不太了解，请参考 [Git 官方文档](https://git-scm.com/book/zh/v2) 或者极客时间的[《玩转 Git 三剑客》](https://time.geekbang.org/course/intro/145)视频课程。
+
+## 提交格式
+
+#学号:G20200343190113
+#语言:JavaScript
+#作业链接:https://github.com/sunsmeil/algorithm022/tree/main/Week_07
